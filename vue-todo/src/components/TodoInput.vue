@@ -18,9 +18,13 @@ export default Vue.extend({
     },
   },
   methods: {
-    handleInput(event: any) {
-      console.log(event);
-      this.$emit('input', event.target.value);
+    handleInput(event: InputEvent) {
+      // console.log(event);
+      // if (!event.target) {
+      //   return;
+      // }
+      const eventTarget = event.target as HTMLInputElement;
+      this.$emit('input', eventTarget.value);
     },
     addTodo() {
       this.$emit('add');
@@ -32,6 +36,19 @@ export default Vue.extend({
 <style scoped>
 div {
   display: flex;
+  height: 2rem;
   align-items: center;
+}
+input {
+  height: 100%;
+}
+button {
+  padding: 0;
+  width: 3rem;
+  height: 100%;
+  font-family: 'RIDIBatang', sans-serif;
+  color: #fff;
+  border: none;
+  background: #ad8b73;
 }
 </style>
