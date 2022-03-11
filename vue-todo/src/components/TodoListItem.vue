@@ -1,8 +1,8 @@
 <template>
   <li>
-    <span class="item" :class="todoItemClass" @click="toggleItem">{{
-      todoItem.title
-    }}</span>
+    <span class="item" :class="todoItemClass" @click="toggleItem"
+      >🎈{{ todoItem.title }}</span
+    >
     <button type="button" @click="removeItem">삭제</button>
   </li>
 </template>
@@ -33,10 +33,29 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+li {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+li + li {
+  margin-top: 1rem;
+}
 .item {
   cursor: pointer;
 }
+.item + button {
+  margin-left: 1rem;
+}
 .complete {
   text-decoration: line-through;
+}
+button {
+  padding: 0;
+  width: 4rem;
+  font-family: 'RIDIBatang', sans-serif;
+  color: #fff;
+  border: none;
+  background: #ad8b73;
 }
 </style>

@@ -36,15 +36,19 @@ export default Vue.extend({
 <style scoped>
 div {
   display: flex;
-  height: 2rem;
+  height: 3rem;
   align-items: center;
+  justify-content: center;
 }
 input {
+  margin-left: 0.5rem;
   height: 100%;
+  border: 1px solid #ad8b73;
+  border-right: none;
 }
 button {
   padding: 0;
-  width: 3rem;
+  width: 5rem;
   height: 100%;
   font-family: 'RIDIBatang', sans-serif;
   color: #fff;

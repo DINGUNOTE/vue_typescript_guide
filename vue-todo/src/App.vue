@@ -123,6 +123,10 @@ export default Vue.extend({
   padding: 0;
   box-sizing: border-box;
 }
+::selection {
+  color: #fff;
+  background: #ad8b73;
+}
 html {
   height: 100%;
   font-family: 'RIDIBatang', sans-serif;
@@ -135,8 +139,19 @@ body {
   height: 100%;
   font-size: 1.6rem;
 }
-::selection {
-  color: #fff;
-  background: #ad8b73;
+main {
+  text-align: center;
+}
+h1 {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+ul {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem 0;
 }
 </style>
