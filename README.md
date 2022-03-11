@@ -2,7 +2,7 @@
 
 ### 첫번째 프로젝트 개발 환경 설정 및 프로젝트 생성
   * Vue CLI 최신 버전 활용 Vue 2 기반, Babel, TypeScript, Linter + Prettier 포함
-
+  * [Vue Todo with Typescript](https://sleepy-varahamihira-ff7e16.netlify.app/)
 
 
 

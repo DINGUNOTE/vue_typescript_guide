@@ -126,12 +126,14 @@ export default Vue.extend({
 html {
   height: 100%;
   font-family: 'RIDIBatang', sans-serif;
+  font-size: 10px;
   color: #ad8b73;
   background: #fbf8f1;
 }
 body {
   padding: 1rem;
   height: 100%;
+  font-size: 1.6rem;
 }
 ::selection {
   color: #fff;
