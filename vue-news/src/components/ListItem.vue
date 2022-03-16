@@ -73,6 +73,7 @@ export default Vue.extend({
 }
 .points {
   width: 80px;
+  min-width: 80px;
   height: 60px;
   color: #42b883;
   display: flex;
