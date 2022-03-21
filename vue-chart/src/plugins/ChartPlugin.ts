@@ -1,7 +1,8 @@
-import Chart from 'chart.js';
+import Chart from 'chart.js/auto';
+import { VueConstructor } from 'vue';
 
 export default {
-  install(Vue) {
+  install(Vue: VueConstructor) {
     Vue.prototype.$_Chart = Chart;
   },
 };
